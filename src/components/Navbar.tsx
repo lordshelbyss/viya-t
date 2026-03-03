@@ -44,9 +44,9 @@ export default function Navbar() {
               <Image
                 src="/images/logo-mark.png"
                 alt="Viya T"
-                width={28}
-                height={36}
-                className="logo-gold h-7 md:h-9 w-auto"
+                width={36}
+                height={46}
+                className="logo-gold h-9 md:h-11 w-auto"
                 priority
               />
               <div className="flex flex-col items-start">

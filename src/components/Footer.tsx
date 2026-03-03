@@ -29,9 +29,9 @@ export default function Footer() {
           <Image
             src="/images/logo-mark.png"
             alt="Viya T"
-            width={40}
-            height={52}
-            className="logo-gold mx-auto mb-6 h-10 w-auto"
+            width={56}
+            height={72}
+            className="logo-gold mx-auto mb-6 h-14 w-auto"
           />
           <h3 className="font-[var(--font-serif)] text-2xl md:text-3xl gold-text mb-3">
             Stay in the World of Viya T
@@ -75,9 +75,9 @@ export default function Footer() {
               <Image
                 src="/images/logo-mark.png"
                 alt="Viya T"
-                width={22}
-                height={28}
-                className="logo-gold h-6 w-auto"
+                width={30}
+                height={38}
+                className="logo-gold h-8 w-auto"
               />
               <span className="font-[var(--font-serif)] text-lg tracking-[0.2em] gold-text">
                 VIYA T

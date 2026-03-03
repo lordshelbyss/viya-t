@@ -35,9 +35,9 @@ export default function Home() {
               <Image
                 src="/images/logo-mark.png"
                 alt=""
-                width={48}
-                height={62}
-                className="logo-gold h-12 md:h-14 w-auto mb-6 animate-fade-in-up"
+                width={72}
+                height={92}
+                className="logo-gold h-16 md:h-20 w-auto mb-6 animate-fade-in-up"
                 priority
               />
               <p className="text-[11px] tracking-[0.5em] uppercase text-gold-metallic/60 animate-fade-in-up">
@@ -135,9 +135,9 @@ export default function Home() {
           <Image
             src="/images/logo-mark.png"
             alt=""
-            width={44}
-            height={56}
-            className="logo-gold mx-auto mb-8 h-11 w-auto"
+            width={64}
+            height={82}
+            className="logo-gold mx-auto mb-8 h-16 md:h-20 w-auto"
           />
           <blockquote className="font-[var(--font-serif)] text-2xl md:text-4xl lg:text-[2.75rem] text-ivory leading-snug italic">
             &ldquo;We believe the finest fragrances are born from the earth, not

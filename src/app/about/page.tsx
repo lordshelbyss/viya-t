@@ -34,9 +34,9 @@ export default function AboutPage() {
             <Image
               src="/images/logo-mark.png"
               alt=""
-              width={48}
-              height={62}
-              className="logo-gold mx-auto mb-6 h-12 w-auto"
+              width={72}
+              height={92}
+              className="logo-gold mx-auto mb-6 h-16 md:h-20 w-auto"
               priority
             />
             <p className="text-[10px] tracking-[0.5em] uppercase text-gold-metallic/50 mb-6">
