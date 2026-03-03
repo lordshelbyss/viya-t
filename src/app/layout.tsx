@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Viya T — Organic Perfumery",
+  title: "Viya T — Botanical Parfums",
   description:
     "Pure, organic fragrances crafted from India's finest botanicals. 100% chemical-free luxury perfumes.",
 };
@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="antialiased bg-navy text-ivory">
         <Navbar />
-        <main className="min-h-screen pt-16 md:pt-20">{children}</main>
+        <main className="min-h-screen pt-20 md:pt-24">{children}</main>
         <Footer />
       </body>
     </html>

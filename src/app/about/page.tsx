@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Leaf, Heart, Sun, Recycle, Instagram } from "lucide-react";
 
 export const metadata = {
-  title: "Our Story — Viya T Organic Perfumery",
+  title: "Our Story — Viya T Botanical Parfums",
   description:
     "Discover the story behind Viya T — crafting pure, organic fragrances from India's botanical heritage.",
 };
@@ -34,9 +34,9 @@ export default function AboutPage() {
             <Image
               src="/images/logo-mark.png"
               alt=""
-              width={72}
-              height={92}
-              className="logo-gold mx-auto mb-6 h-16 md:h-20 w-auto"
+              width={120}
+              height={154}
+              className="logo-gold mx-auto mb-6 h-28 md:h-36 w-auto"
               priority
             />
             <p className="text-[10px] tracking-[0.5em] uppercase text-gold-metallic/50 mb-6">

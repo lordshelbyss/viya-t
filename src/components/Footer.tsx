@@ -29,9 +29,9 @@ export default function Footer() {
           <Image
             src="/images/logo-mark.png"
             alt="Viya T"
-            width={56}
-            height={72}
-            className="logo-gold mx-auto mb-6 h-14 w-auto"
+            width={96}
+            height={124}
+            className="logo-gold mx-auto mb-6 h-24 w-auto"
           />
           <h3 className="font-[var(--font-serif)] text-2xl md:text-3xl gold-text mb-3">
             Stay in the World of Viya T
@@ -75,9 +75,9 @@ export default function Footer() {
               <Image
                 src="/images/logo-mark.png"
                 alt="Viya T"
-                width={30}
-                height={38}
-                className="logo-gold h-8 w-auto"
+                width={48}
+                height={62}
+                className="logo-gold h-14 w-auto"
               />
               <span className="font-[var(--font-serif)] text-lg tracking-[0.2em] gold-text">
                 VIYA T
@@ -125,7 +125,7 @@ export default function Footer() {
       <div className="border-t border-gold-dim/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-ivory/15">
-            &copy; {new Date().getFullYear()} Viya T Organic Perfumery. All
+            &copy; {new Date().getFullYear()} Viya T Botanical Parfums. All
             rights reserved.
           </p>
           <div className="flex gap-6">

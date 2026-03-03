@@ -60,9 +60,9 @@ export default async function CollectionPage({
             <Image
               src="/images/logo-mark.png"
               alt=""
-              width={64}
-              height={82}
-              className="logo-gold mx-auto mb-5 h-14 md:h-18 w-auto"
+              width={120}
+              height={154}
+              className="logo-gold mx-auto mb-5 h-24 md:h-32 w-auto"
               priority
             />
             <p className="text-[10px] tracking-[0.5em] uppercase text-gold-metallic/45 mb-4">

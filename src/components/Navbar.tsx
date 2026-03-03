@@ -18,7 +18,7 @@ export default function Navbar() {
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/92 backdrop-blur-md border-b border-gold-dim/12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-20 md:h-24">
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden p-2 text-ivory/60 hover:text-gold-metallic transition-colors"
@@ -44,9 +44,9 @@ export default function Navbar() {
               <Image
                 src="/images/logo-mark.png"
                 alt="Viya T"
-                width={36}
-                height={46}
-                className="logo-gold h-9 md:h-11 w-auto"
+                width={56}
+                height={72}
+                className="logo-gold h-14 md:h-16 w-auto"
                 priority
               />
               <div className="flex flex-col items-start">
@@ -54,7 +54,7 @@ export default function Navbar() {
                   VIYA T
                 </span>
                 <span className="text-[7px] tracking-[0.35em] uppercase text-gold-dim/30 leading-none mt-0.5">
-                  Organic Perfumery
+                  Botanical Parfums
                 </span>
               </div>
             </Link>
