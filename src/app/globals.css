@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: #07090F;
+  --color-navy-light: #0D1018;
+  --color-navy-mid: #141824;
+  --color-navy-soft: #1C2030;
+  --color-gold: #B8964E;
+  --color-gold-light: #D4AF6A;
+  --color-gold-dim: #8C6E35;
+  --color-gold-pale: #E8D5A8;
+  --color-gold-metallic: #C9A962;
+  --color-maroon: #5C1A2A;
+  --color-maroon-deep: #3A0C18;
+  --color-maroon-light: #8B2E42;
+  --color-ivory: #F2EDE4;
+  --color-ivory-dim: #CFC8BA;
+  --color-parchment: #E8E0D0;
+  --color-wine: #722F37;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-navy);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.baroque-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.baroque-divider::before,
+.baroque-divider::after {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--color-gold-dim), transparent);
+}
+
+.gold-text {
+  background: linear-gradient(
+    135deg,
+    var(--color-gold-dim) 0%,
+    var(--color-gold-light) 25%,
+    var(--color-gold-pale) 50%,
+    var(--color-gold-light) 75%,
+    var(--color-gold-dim) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*
+ * Turns the dark-purple-on-white logo mark into metallic gold on
+ * transparent. invert flips white→black + purple→light; screen blend
+ * drops the black; sepia+hue-rotate+saturate tints gold.
+ */
+.logo-gold {
+  filter: invert(1) sepia(0.6) saturate(3) hue-rotate(345deg) brightness(0.92);
+  mix-blend-mode: screen;
+}
+
+.gold-border {
+  border-image: linear-gradient(
+    135deg,
+    var(--color-gold-dim),
+    var(--color-gold-light),
+    var(--color-gold-dim)
+  ) 1;
+}
+
+.overlay-baroque {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 9, 15, 0.3) 0%,
+    rgba(7, 9, 15, 0.1) 30%,
+    rgba(58, 12, 24, 0.4) 70%,
+    rgba(7, 9, 15, 0.85) 100%
+  );
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.9s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dim);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
 }
